@@ -1,0 +1,310 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section >
+<section >
+<h1>How to build error free web app</h1>
+<h2>while having fun</h2>
+<p>with Elm and functional programming</p>
+</section>
+</section>
+<section >
+<h1>Contents</h1>
+<ul>
+<li>what is Elm</li>
+<li>why use it</li>
+<li>functional programming for dummies</li>
+<li>Elm features</li>
+<li>how it compares to JS</li>
+<li>the downsides</li>
+<li>demo</li>
+</ul>
+</section>
+<section >
+<h1>What is Elm</h1>
+<p>Elm is a domain specific language to build SPA</p>
+<blockquote>
+<p>Every framework you’ve ever seen is really just an echo of this statement: &quot;My language sucks!&quot;</p>
+<p><em>Robert C. Martin</em></p>
+</blockquote>
+</section>
+<section >
+<section >
+<h1>Why use Elm</h1>
+</section>
+<section >
+<h2>Runtime error free</h2>
+<p><img src="media/zeroRuntimeExceptions.jpeg" alt=""></p>
+</section>
+<section >
+<h2>No unintended side effects</h2>
+<p><img src="media/sideEffects.gif" alt=""></p>
+</section>
+<section >
+<h2>Great developer experience</h2>
+<p><img src="media/friendlyCompiler.png" alt=""></p>
+</section>
+<section >
+<h2>Less to be tested</h2>
+<p><img src="media/test.png" alt=""></p>
+</section>
+<section >
+<h2>Only one way to do things</h2>
+<p><img src="media/oneWay.jpg" alt=""></p>
+</section>
+<section >
+<h2>Change way of thinking</h2>
+<blockquote>
+<p>I don’t want to think about code, I want to think about concepts</p>
+<p><em>Guillaume Hiverté</em></p>
+</blockquote>
+</section>
+<section >
+<h2>Entry point to FP for front-enders</h2>
+<p><img src="media/functionalProgrammingLanguages.jpg" alt=""></p>
+</section>
+</section>
+<section >
+<section >
+<h1>FP for dummies</h1>
+</section>
+<section >
+<p><img src="media/oop_vs_fp.svg" alt=""></p>
+</section>
+<section >
+<h3>Pure function</h3>
+<p><img src="media/pureFunction.jpg" alt=""></p>
+</section>
+<section >
+<h3>Immutable values</h3>
+<p><img src="media/immutability.jpg" alt=""></p>
+</section>
+<section >
+<h3>Function composition</h3>
+<p><img src="media/function_composition.svg" alt=""></p>
+</section>
+<section >
+<h3>First-class functions</h3>
+<ul>
+<li>Lambda functions</li>
+<li>Closures</li>
+<li>Higher-order functions</li>
+</ul>
+</section>
+<section >
+<h3>Partial application/Currying</h3>
+<p><img src="media/partial_application.svg" alt=""></p>
+</section>
+</section>
+<section >
+<section >
+<h1>Features</h1>
+</section>
+<section >
+<h2>Static types</h2>
+<p><img src="media/staticTypes.png" alt=""></p>
+</section>
+<section >
+<h2>Friendly compiler that prevents syntax errors</h2>
+<p><img src="media/compilerPreventSyntaxErrors.png" alt=""></p>
+</section>
+<section >
+<h2>Everything is a pure function -&gt; no unintended side effects</h2>
+<p><img src="media/elmRuntime.png" alt=""></p>
+</section>
+<section >
+<h2>Currying by default</h2>
+<p><img src="media/currying.png" alt=""></p>
+</section>
+<section >
+<h2>Immutability</h2>
+<p><img src="media/surprise.jpg" alt=""></p>
+</section>
+<section >
+<h2>Modules</h2>
+<p><img src="media/moduless.jpg" alt=""></p>
+</section>
+<section >
+<h2>The Elm Architecture(TEA)</h2>
+<p><img src="media/tea.png" alt=""></p>
+</section>
+<section >
+<h2>JS interoperability</h2>
+<p><img src="media/elmJsInteroperability.jpg" alt=""></p>
+</section>
+<section >
+<h2>Package manager with enforced semantic versioning</h2>
+<p><img src="media/semVer.png" alt=""></p>
+</section>
+<section >
+<h2>Strongly opinionated: only 1 way to do something</h2>
+<p><img src="media/opinionated.jpg" alt=""></p>
+</section>
+<section >
+<h2>Html templating without additional language/syntax</h2>
+<p><img src="media/noDependency.png" alt=""></p>
+</section>
+</section>
+<section >
+<section >
+<h1>Elm vs JS</h1>
+</section>
+<section >
+<h2 class="center white">JS</h2>
+<p><img src="media/jsJungle.jpg" alt=""></p>
+</section>
+<section >
+<h2 class="center white">Elm</h2>
+<p><img src="media/elmSwitzerland.jpg" alt=""></p>
+</section>
+<section >
+<h2>Elm could be compared to:</h2>
+<ul>
+<li>TypeScript</li>
+<li>ESLint</li>
+<li>Immutable.js</li>
+<li>Ramda.js</li>
+<li>React</li>
+<li>JSX</li>
+<li>Redux</li>
+<li>Redux-thunk</li>
+<li>React Router</li>
+<li>(Npm)</li>
+<li>(Webpack)</li>
+</ul>
+</section>
+</section>
+<section >
+<h1>The downsides</h1>
+<ul>
+<li>Smaller ecosystem compared to Js</li>
+<li>Cannot perform any operation that requires to mess up with the DOM</li>
+<li>Single state + stateless view -&gt; need to pass state to every level</li>
+<li>Tricky animations (as in React but with less tools to help)</li>
+</ul>
+</section>
+<section >
+<h1>Resources</h1>
+<ul>
+<li><a href="http://elm-lang.org/">Official site</a></li>
+<li><a href="http://package.elm-lang.org/">Package repo</a></li>
+<li><a href="http://elmprogramming.com/">A gentle introduction to Elm</a></li>
+<li><a href="https://ellie-app.com/">Elm live editor</a></li>
+<li><a href="http://mbylstra.github.io/html-to-elm/">Html to Elm</a></li>
+<li><a href="https://peterszerzo.github.io/elm-natural-ui/">Ui Kit</a></li>
+<li><a href="https://github.com/izdi/elm-cheat-sheet">Elm cheat-sheet</a></li>
+<li><a href="https://github.com/halfzebra/create-elm-app">Create elm app</a></li>
+</ul>
+</section>
+<section >
+<section >
+<h1>Syntax</h1>
+<pre><code class="language-Elm">-- comment
+
+-- variable declaration and assignment
+myList = [1,2,3]
+
+-- function declaration
+myFunc num1 num2 =
+    num1 + num2
+
+-- function call
+myFunc 1 2
+
+</code></pre>
+</section>
+<section >
+<h1>Data Structures</h1>
+<pre><code class="language-Elm">myList = [1,2,3]
+
+-- Record
+myRecord = {
+    name: &quot;pippo&quot;
+    , surname: &quot;pluto&quot;
+}
+
+myUnionType = Number | String
+
+myTuple = (1, 2)
+
+</code></pre>
+</section>
+</section>
+<section >
+<h1>DEMO TIME!</h1>
+</section>
+<section >
+<h1>Recap</h1>
+<ul>
+<li>Core principles of FP</li>
+<li>Advantages of Elm over other front end stack</li>
+<li>Elm shortcomings</li>
+<li>Example on an Elm program</li>
+</ul>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			{
+				let configuration = {"controls":true,"progress":true,"slideNumber":false,"history":false,"keyboard":true,"overview":true,"center":true,"touch":true,"loop":false,"rtl":false,"shuffle":false,"fragments":true,"embedded":false,"help":true,"showNotes":false,"autoSlideStoppable":true,"mouseWheel":false,"hideAddressBar":true,"previewLinks":false,"transition":"slide","transitionSpeed":"default","backgroundTransition":"default","autoSlide":0,"viewDistance":3,"parallaxBackgroundImage":"","parallaxBackgroundSize":"","parallaxBackgroundHorizontal":null,"parallaxBackgroundVertical":null};
+				configuration.dependencies = [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				];
+				Reveal.initialize(configuration);
+			}
+		</script>
+
+	</body>
+</html>
